@@ -10,13 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/cs s2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-    <!-- <a href="#top" class="btn-top py-2 px-2 text-decoration-none
-    ">top</a> -->
+<body>
     <div id="blackB"  class="block-black w-100 h-100vh position-absolute start-0 top-0 z-2 bg-dar d-flex align-items-center justify-content-center overflow-hidden">
-        <h1 class="my-name m-0 text-white" id="top">
+        <h1 class="my-name m-0 text-white">
             <span>Abhishek</span>
             <span class="text-rathi">Rathi</span>
             <span>is</span>
@@ -27,12 +26,15 @@
     </div>
     <div class="bg-background">
         <div class="container text-white">
-            <header class="d-flex justify-content-between pt-3 align-items-center pb-2">
+            <header class="d-flex justify-content-between pt-3 align-items-center pb-2 position-relative z-2">
                 <div class="logo">
                     <h1>Portfolio.</h1>
                 </div>
+                <div class="bars d-md-none">
+                    <a href="#" class="text-white"><i class="fa-solid fa-bars"></i></a>
+                </div>
                 <div class="nav"> 
-                    <a href="#" class="text-decoration-none mx-3 underline">Home</a>
+                    <a href="#" class="text-decoration-none mx-3">Home</a>
                     <a href="#" class="text-decoration-none mx-3">About</a>
                     <a href="#my-skills" class="text-decoration-none mx-3">Skills</a>
                     <a href="#myPortfolio" class="text-decoration-none mx-3">Portfolio</a>
@@ -40,35 +42,35 @@
                 </div>
             </header>
             <div class="banner row mt-5 align-items-center">
-                <div class="col-lg-6 col-md-12 col-sm-12 banner-text ">
+                <div class="col-lg-5 offset-lg-1 order-lg-2 ps-lg-5 img-wrap">
+                    <div class="banner-img h-100%">
+                        <img src="assets/abhishek.jpg" alt="" class="w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1 banner-text text-center text-lg-start pt-5 pt-lg-0">
                     <h1 class="pb-2">Hello, It'Me</h1>
                     <h2>Abhishek Kumar</h2>
                     <h3 class="pb-3">And I'm a <span>Frontend Developer</span></h3>
                     <p>A (UI/UX) Developer with 1+ years of experience specializing in wire-framing, prototyping, web template, and Responsive mockups. Adept at building high-quality code and developing innovative web applications flow to meet user needs. Also, Highly skilled Graphic Designer, seeking to use proven skills in UI prototyping and web template designing.</p>
-                    <div class="social-icons d-flex pt-3">
-                    <a href="#" class="text-decoration-none me-3"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="text-decoration-none mx-3"><i class="fa-brands fa-twitter"></i></i></a>
-                    <a href="mailto:kumarabhi843911@gmail.com" class="text-decoration-none mx-3"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="#" class="text-decoration-none ms-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <div class="social-icons d-flex align-items-center justify-content-center justify-content-lg-start pt-3">
+                        <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none me-3"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/abhi639770" target="_blank" class="text-decoration-none mx-3"><i class="fa-brands fa-twitter"></i></i></a>
+                        <a href="mailto:kumarabhi843911@gmail.com" class="text-decoration-none mx-3"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank" class="text-decoration-none ms-3"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
                     <div class="banner-btn">
                         <a href="assets/Abhishek Kumar - CV.pdf" target="_blank" class="btn btn-banner px-3 py-2 mt-5">Download CV</a>
-                    </div>
-                </div>
-                <div class="col-lg-5 offset-lg-1 col-md-12 col-sm-12 ps-5">
-                    <div class="banner-img h-100%">
-                        <img src="assets/abhishek.jpg" alt="" class="w-100 h-100 object-fit-cover">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="my-skills" class="skills container text-white pt-4">
-        <div class="text-center">
+        <div class="text-center" data-aos="fade-down-right">
             <h1 class="text-white text-center d-inline-block text-uppercase pt-2">My Skills</h1>
         </div>
         <div class="row py-3">
-            <div class="col-lg-3 col-md-6 text-center mt-4">
+            <div class="col-xxl-3 col-md-6 col-xl-4 text-center mt-4" data-aos="fade-right" data-aos-delay="200">
                 <div class="border-graphic px-4 py-4">
                     <div class="png-img">
                         <img src="assets/ps.png" alt="">
@@ -77,7 +79,7 @@
                     <p class="pt-2">Image Editing, Web Templates, GIF Animation.</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center mt-4">
+            <div class="col-xxl-3 col-md-6 col-xl-4 text-center mt-4" data-aos="fade-down" data-aos-delay="200">
                 <div class="border-graphic px-4 py-4">
                     <div class="png-img">
                         <img src="assets/illastatur.png" alt="">
@@ -86,7 +88,7 @@
                     <p class="pt-2">Logo Designing, Vector Graphics, Infographic</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center mt-4">
+            <div class="col-xxl-3 col-md-6 col-xl-4 text-center mt-4" data-aos="fade-down" data-aos-delay="300">
                 <div class="border-graphic px-4 py-4">
                     <div class="png-img">
                         <img src="assets/adope.png" alt="">
@@ -95,7 +97,7 @@
                     <p class="pt-2">Wireframing, Low, Medium, and High Fidelity Wireframes</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center mt-4">
+            <div class="col-xxl-3 col-md-6 col-xl-4 text-center mt-4"  data-aos="fade-left" data-aos-delay="400">
                 <div class="border-graphic px-4 py-4">
                     <div class="png-img">
                         <img src="assets/figma.png" alt="">
@@ -104,7 +106,7 @@
                     <p class="pt-2">Wireframing, Low, Medium, and High Fidelity Wireframes, Prototyping</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center mt-4">
+            <div class="col-xxl-3 col-md-6 col-xl-4 text-center mt-4" data-aos="fade-right" data-aos-delay="500">
                 <div class="border-graphic px-4 py-4">
                     <div class="png-img">
                         <img src="assets/html.png" alt="">
@@ -113,7 +115,7 @@
                     <p class="pt-2">HTML is a markup language that is used to design the web pages and create a complete website structure.</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center mt-4">
+            <div class="col-xxl-3 col-md-6 col-xl-4 text-center mt-4" data-aos="fade-up" data-aos-delay="600">
                 <div class="border-graphic px-4 py-4">
                     <div class="png-img">
                         <img src="assets/bootstrap.png" alt="">
@@ -122,7 +124,7 @@
                     <p class="pt-2">Powerful, extensible, and feature-packed frontend toolkit.</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center mt-4">
+            <div class="col-xxl-3 col-md-6 col-xl-4 text-center mt-4" data-aos="fade-up" data-aos-delay="700">
                 <div class="border-graphic px-4 py-4">
                     <div class="png-img">
                         <img src="assets/java.png" alt="">
@@ -131,7 +133,7 @@
                     <p class="pt-2">JavaScript is a programming language used for making web pages interactive.</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center mt-4">
+            <div class="col-xxl-3 col-md-6 col-xl-4 text-center mt-4" data-aos="fade-left" data-aos-delay="800">
                 <div class="border-graphic px-4 py-4">
                     <div class="png-img">
                         <img src="assets/css.png" alt="">
@@ -143,19 +145,19 @@
         </div>
     </div>
     <div id="myPortfolio" class="container portfolio pt-5">
-        <div class="text-center">
+        <div class="text-center" data-aos="fade-down-right">
             <h1 class="text-white text-center d-inline-block text-uppercase pt-3">My Projects</h1>
         </div>
         <div class="row pt-3">
-            <div class="col-lg-4 col-md-6 col-sm-12 pt-4 card-hovered">
+            <!-- <div class="col-lg-4 col-md-6 col-sm-12 pt-4 card-hovered" data-aos="fade-right" data-aos-delay="300" >
                 <a href="https://www.libertypark.com/" target="_blank" class="card-top card border-0 text-white position-relative">
                     <img src="assets/libertypark.png" alt="Libertypark" class="w-100 h-100 object-fit-cover">
                     <div class="card-overlay position-absolute">
                         <h3>Libertypark</h3>
                     </div>
                 </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 pt-4 card-hovered">
+            </div> -->
+            <div class="col-lg-4 col-md-6 col-sm-12 pt-4 card-hovered"  data-aos="fade-right" data-aos-delay="300">
                 <a href="https://www.ehab.com/" target="_blank" class="card-top card border-0  text-white position-relative">
                     <img src="assets/ehab.png" alt="ehab" class="w-100 h-100 object-fit-cover">
                     <div class="card-overlay position-absolute">
@@ -163,15 +165,15 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 pt-4 card-hovered">
+            <!-- <div class="col-lg-4 col-md-6 col-sm-12 pt-4 card-hovered"  data-aos="fade-left" data-aos-delay="700">
                 <a href="https://davidkcompany.com/" target="_blank" class="card-top card text-white border-0 position-relative">
                     <img src="assets/david.png" alt="david" class="w-100 h-100 object-fit-cover">
                     <div class="card-overlay position-absolute">
                         <h3>David</h3>
                     </div>
                 </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 pt-4 pb-5 card-hovered">
+            </div> -->
+            <div class="col-lg-4 col-md-6 col-sm-12 pt-4 pb-5 card-hovered" data-aos="fade-down"  data-aos-delay="500">
                 <a href="https://www.figma.com/file/DzNzM5lkUCHsweRgASqeLQ/Untitled?type=design&node-id=0%3A1&mode=design&t=gj1DI5hn4uOfTmmq-1" target="_blank" class="card text-white border-0 card-top position-relative">
                     <img src="assets/login.png" alt="login" class="w-100 h-100 object-fit-cover">
                     <div class="card-overlay position-absolute">
@@ -179,7 +181,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 pt-4 pb-5 card-hovered">
+            <div class="col-lg-4 col-md-6 col-sm-12 pt-4 pb-5 card-hovered" data-aos="fade-left" data-aos-delay="700">
                 <a href="https://www.figma.com/file/tvhpDnOwKCeZSh0EaqXSpz/Untitled?type=design&node-id=0%3A1&mode=design&t=k0eEvWxlhOEmDmBR-1" target="_blank" class="card text-white border-0 card-top position-relative">
                     <img src="assets/furniture.png" alt="furniture" class="w-100 h-100 object-fit-cover">
                     <div class="card-overlay position-absolute">
@@ -187,22 +189,26 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 pt-4 pb-5 card-hovered">
+            <!-- <div class="col-lg-4 col-md-6 col-sm-12 pt-4 pb-5 card-hovered">
                 <a href="https://www.figma.com/file/DzNzM5lkUCHsweRgASqeLQ/Untitled?type=design&node-id=0%3A1&mode=design&t=gj1DI5hn4uOfTmmq-1" target="_blank" class="card text-white border-0 card-top position-relative">
                     <img src="assets/login.png" alt="login (figma)" class="w-100 h-100 object-fit-cover">
                     <div class="card-overlay position-absolute">
                         <h3>Login</h3>
                     </div>
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="container">
         <div class="row py-3" id="contact">
-            <div class="col-md-4 text-white text-center footer-text">
+                <div class="col-md-4 text-white text-center footer-text">
+                    <i class="fa-solid fa-location-dot fa-3x"></i>
+                    <h6 class="pt-3">Vill. - ShahpurHarra, distt. - Bijnor(U.P)</h6>
+                </div>
+            <!-- <a href="https://maps.app.goo.gl/DqHgAgtNpekpiyqe8" target="_blank" class="col-lg-4 text-center contact-footer text-decoration-none">
                 <i class="fa-solid fa-location-dot fa-3x"></i>
-                <h6 class="pt-3">Vill. - ShahpurHarra, distt. - Bijnor(U.P)</h6>
-            </div>
+                <h6 class="pt-2">vill. - Shahpur Harra distt. - Bijnor (U.P)</h6>
+            </a> -->
             <div class="col-md-4 text-center footer-text">
                 <i class="fa-solid fa-envelope fa-3x"></i>
                 <div class="d-block footer-texts">
@@ -217,9 +223,28 @@
             </div>
         </div>
     </div>
+     <!-- <div class="position-relative scroll-top">
+        <a href="#" class="btn-top py-2 px-2 text-decoration-none">top</a>
+    </div> -->
     <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>    
+        $('.bars a').on('click', function(e) {
+          $('.nav').toggleClass("collapsed"); //you can list several class names 
+          e.preventDefault();
+        });
+    </script>
 </body>
 </html>
-<!-- Quirks Mode. -->
+<!-- 
+    249403
+    https://klaas-dentist-template.webflow.io/ 
+    https://hindikhoji.com/tipshacks/css-interview-viva-questions-hindi/
+    https://hindikhoji.com/tipshacks/html-interview-viva-questions-hindi/
+-->
